@@ -6,7 +6,10 @@ namespace CSharp8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var point = new Point();
+            point.X = 10;
+            point.Y = 20;
+            System.Console.WriteLine(point.ToString());
         }
     }
 }
