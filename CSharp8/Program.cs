@@ -8,6 +8,7 @@ namespace CSharp8
         static void Main(string[] args)
         {
             WriteNumber();
+            Console.ReadLine();
         }
 
         private static async void WriteNumber()
