@@ -18,5 +18,20 @@ namespace CSharp8
                 "es-es" => "¡Hola!",
                 _ => "???????????"
             };
+
+        static string GetGreetingOldWay(string language)
+        {
+            switch (language)
+            {
+                case "pt-br":
+                    return "Oi!";
+                case "en-us":
+                    return "Hello!";
+                case "es-es":
+                    return "¡Hola!";
+                default:
+                    return "???????????";
+            }
+        }
     }
 }
