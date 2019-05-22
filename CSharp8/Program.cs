@@ -6,7 +6,11 @@ namespace CSharp8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ICalculator calculator = new Calculator();
+            calculator.FirstNumber = 1;
+            calculator.SecondNumber = 2;
+            Console.WriteLine(calculator.Sum());
+            Console.ReadLine();
         }
     }
 }
