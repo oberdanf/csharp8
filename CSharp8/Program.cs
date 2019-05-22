@@ -6,7 +6,19 @@ namespace CSharp8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using var fileReader = new System.IO.StreamReader("test.txt");
+
+            using (var fileWriter = new System.IO.StreamWriter("test.txt"))
+            {
+                fileWriter.Write("oi");
+                //File writer is disposed here
+            }
+            
+            var text = fileReader.ReadToEnd();
+            Console.WriteLine(text);
+            Console.ReadLine();
+
+        //file reader is disposed here
         }
     }
 }
