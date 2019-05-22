@@ -4,9 +4,15 @@ namespace CSharp8
 {
     class Program
     {
+        
+        static string test = null;
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if(test.Length > 0)
+            {
+                Console.WriteLine($"{test.Length} characters");
+            }
         }
     }
 }
